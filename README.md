@@ -2,8 +2,6 @@
 
 Node.js bolierplate for silky-smooth media streaming
 
-![bottle-nose](http://images.clipartpanda.com/bottlenose-dolphin-clipart-delphin_clip_art_preview.jpg)
-
 ---
 ##What you will need to do:
 
