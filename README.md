@@ -9,3 +9,6 @@ All list of all versions
 ###v0.0.0.1 Just Testing
 Unmodified source from HackWSU 2016
 
+###v0.0.0.2
+Sanitized code
+
