@@ -8,7 +8,7 @@ Node.js and Angular library for silky-smooth media streaming
 ##What you will need to do:
 
 1. Install the Linux version of ffmpeg.
-2. Link the [FlowPlayer] (https://github.com/flowplayer/flowplayer/tree/master/lib) minified js file and [.swf] () on the client side.
+2. Link the [FlowPlayer] (https://github.com/fluent-ffmpeg/node-fluent-ffmpeg/tree/master/examples/flowplayer) flowplayer.min.js file and flowplayer.swf to index.html.
 3. run ```npm install```
 
 ***
