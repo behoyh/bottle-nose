@@ -1,0 +1,14 @@
+{
+  "name": "example",
+  "version": "0.0.0",
+  "description": "example",
+  "main": "server.js",
+  "author": {
+    "name": "besho"
+  },
+  "dependencies": {
+    "path": "^1",
+    "express": "^4.14.0",
+    "fluent-ffmpeg": "^1"
+  }
+}
