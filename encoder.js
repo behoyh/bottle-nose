@@ -2,9 +2,9 @@
     app = express(),
     ffmpeg = require('fluent-ffmpeg');
 
-module.exports = function () {
-    app.stream(req, res)
-    {
+
+module.exports = {
+    stream: function stream(req, res) {
         res.contentType('flv');
         // make sure you set the correct path to your video file storage 
         var pathToMovie = '/path/to/storage/' + req.params.filename;
@@ -21,6 +21,5 @@ module.exports = function () {
             // save to stream 
             .pipe(res, { end: true });
 
-    };
-
+    }
 }

@@ -1,14 +1,14 @@
 {
   "name": "example",
-  "version": "0.0.0.1",
+  "version": "0.0.0",
   "description": "example",
-  "main": "streamserver.js",
+  "main": "server.js",
   "author": {
     "name": "besho"
   },
   "dependencies": {
-    "path": "^1",
     "express": "^4.14.0",
-    "fluent-ffmpeg": "^1"
+    "fluent-ffmpeg": "^2.1.0",
+    "path2": "^0.1.0"
   }
 }
