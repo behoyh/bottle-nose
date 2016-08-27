@@ -6,6 +6,10 @@ Node.js bolierplate for silky-smooth media streaming
 ##What you will need to do:
 
 1. Install the Linux version of ffmpeg.
+  a. sudo add-apt-repository ppa:jon-severinsson/ffmpeg
+  b. sudo apt-get update
+  c. sudo apt-get install ffmpeg
+  d. sudo apt-get install frei0r-plugins
 2. Link the [FlowPlayer] (https://github.com/fluent-ffmpeg/node-fluent-ffmpeg/tree/master/examples/flowplayer) flowplayer.min.js file and flowplayer.swf to index.html.
 3. run ```npm install```
 
