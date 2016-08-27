@@ -9,7 +9,7 @@ Node.js and Angular library for silky-smooth media streaming
 
 1. The Linux version of ffmpeg.
 2. Flowplayer on the client side.
-3. npm fluent-ffmpeg-
+3. npm fluent-ffmpeg
 
 ***
 
