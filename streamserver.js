@@ -3,7 +3,7 @@
     app = express(),
     encoder = require('./encoder');
 
-    app.get('/api/stream', function (req, res) {
+    app.get('/api/stream/:filename', function (req, res) {
         encoder.stream(req, res);
     });
 
