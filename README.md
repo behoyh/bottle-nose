@@ -12,7 +12,7 @@ Node.js bolierplate for silky-smooth media streaming
 ***
 
 ##Version History
-All list of all versions
+A list of all versions
 ###v0.0.0.1 Just Testing
 Unmodified source from HackWSU 2016
 
