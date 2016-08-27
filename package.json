@@ -1,8 +1,8 @@
 {
   "name": "example",
-  "version": "0.0.0",
+  "version": "0.0.0.2",
   "description": "example",
-  "main": "server.js",
+  "main": "streamserver.js",
   "author": {
     "name": "besho"
   },
