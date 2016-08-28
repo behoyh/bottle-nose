@@ -26,5 +26,5 @@ Sanitized code
 
 ---
 #Roadmap
-- [x] Publish working code
-- [ ] Complie into an npm package
+- ☑ Publish working code
+- ☐ Complie into an npm package
