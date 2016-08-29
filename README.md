@@ -23,6 +23,8 @@ Unmodified source from HackWSU 2016
 ###v0.0.0.2 Just Cleaning
 Sanitized code
 
+###v0.0.0.3 Just Renaming
+Rename `encoder.js` to `bottle-nose.js`
 
 ---
 #Roadmap
