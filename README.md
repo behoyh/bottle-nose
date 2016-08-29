@@ -34,6 +34,6 @@ Functions for MPEG-DASH and Apple HLS added, encoder.js module added for file ty
 ---
 #Roadmap
 ☑ Publish working code <br>
-☐ Abrstact more functions of fluent-ffmpeg into cool one-liners<br>
+☐ Abrstact more functions of fluent-ffmpeg into cool one-liners (In-Progress)<br>
 ☐ Upgrade client-side player to support the aforemetioned functions<br>
 ☐ Complie into an npm package
