@@ -1,10 +1,10 @@
 {
   "name": "example",
-  "version": "0.0.0.2",
+  "version": "0.0.0.3",
   "description": "example",
   "main": "streamserver.js",
   "author": {
-    "name": "beshoy"
+    "name": "besho"
   },
   "dependencies": {
     "express": "^4.14.0",
