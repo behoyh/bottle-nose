@@ -58,7 +58,7 @@ module.exports = {
                     });
             });
     },
-    streamHls: function (req, res) {
+    streamHls: function (req, res, options) {
 
     }
 }
