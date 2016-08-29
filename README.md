@@ -12,7 +12,7 @@ Node.js bolierplate for silky-smooth media streaming
   * sudo apt-get install frei0r-plugins
 2. Link the [FlowPlayer] (https://github.com/fluent-ffmpeg/node-fluent-ffmpeg/tree/master/examples/flowplayer) flowplayer.min.js file and flowplayer.swf to index.html.
 3. run ```npm install```
-4. ```node streamserver.js```
+4. run ```node streamserver.js```
 5. Navigate to index.html
 
 ***
