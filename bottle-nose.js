@@ -1,4 +1,4 @@
-﻿var path = require('path'),
+var path = require('path'),
     express = require('express'),
     app = express(),
     ffmpeg = require('fluent-ffmpeg'),
@@ -51,11 +51,10 @@ module.exports = {
                     .on('end', function () {
                         console.log('Stream Done');
                     })
-                    .on("open", function () {
-                        stream.pipe(res, { end: true });
-                    }).on("error", function (err) {
+                    .on("error", function (err) {
                         res.end(err);
-                    });
+                    })
+                    .pipe(res, { end: true });
             });
     },
     streamHls: function (req, res, options) {
