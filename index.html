@@ -17,5 +17,14 @@
         <script>
             flowplayer("player", "/flowplayer.swf");
         </script>
+        
+    <video controls>
+        <source src="http://localhost:4000/api/stream/movie.mp4" type="video/mp4"/>
+        <source src="http://localhost:4000/api/stream/movie.webm" type="video/webm"/>
+        <source src="http://localhost:4000/api/stream/movie.ogg" type="video/ogg"/>
+        <!-- fallback -->
+        Your browser does not support the <code>video</code> element.
+    </video>
+        
     </body>
 </html>
