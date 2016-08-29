@@ -31,6 +31,6 @@ Rename `encoder.js` to `bottle-nose.js`
 ---
 #Roadmap
 ☑ Publish working code <br>
-☐ Abrstact more functions of funlent-ffmpeg into cool one-liners<br>
+☐ Abrstact more functions of fluent-ffmpeg into cool one-liners<br>
 ☐ Upgrade client-side player to support the aforemetioned functions<br>
 ☐ Complie into an npm package
