@@ -28,6 +28,9 @@ Sanitized code
 ###v0.0.0.3 Just Renaming
 Rename `encoder.js` to `bottle-nose.js`
 
+###v.0.0.0.4 Just Adding
+Functions for MPEG-DASH and Apple HLS added, encoder.js module added for file type encoding 
+
 ---
 #Roadmap
 ☑ Publish working code <br>
