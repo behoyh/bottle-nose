@@ -1,4 +1,4 @@
-var path = require('path'),
+﻿var path = require('path'),
     express = require('express'),
     app = express(),
     ffmpeg = require('fluent-ffmpeg'),
@@ -7,7 +7,7 @@ var path = require('path'),
 
 
 module.exports = {
-    streamFlash: function (req, res, options) {
+    streamFlash: function (req, res) {
         res.contentType('flv');
         var pathToMovie = './public/' + req.params.filename;
         var proc = ffmpeg(pathToMovie)
@@ -21,7 +21,7 @@ module.exports = {
             })
             .pipe(res, { end: true });
     },
-    streamDash: function (req, res, options) {
+    streamDash: function (req, res) {
         var movie = path.resolve('./public/' + req.params.filename);
             fs.stat(movie, function (err, stats) {
                 if (err) {
@@ -41,12 +41,12 @@ module.exports = {
                 var chunksize = (end - start) + 1;
 
                 res.writeHead(206, {
+                    'Transfer-Encoding': 'chunked',
                     "Content-Range": "bytes " + start + "-" + end + "/" + total,
                     "Accept-Ranges": "bytes",
                     "Content-Length": chunksize,
                     "Content-Type": encoder.encode(req.params.filename)
                 });
-
                 var stream = fs.createReadStream(movie, { start: start, end: end, autoClose: true })
                     .on('end', function () {
                         console.log('Stream Done');
@@ -57,7 +57,24 @@ module.exports = {
                     .pipe(res, { end: true });
             });
     },
-    streamHls: function (req, res, options) {
+    streamHls: function (req, res) {
+        var proc = ffmpeg('./public/' + req.params.filename)
+            .videoBitrate(1024)
+            .videoCodec('libx264')
+            .audioBitrate('256k')
+            .audioCodec('libfaac')
+            .audioChannels(2)
+            .addOption('-hls_time', 10)
+            .addOption('-hls_list_size', 0)
+            .on('end', function () {
+                console.log('file has been converted succesfully');
+            })
+            .on('error', function (err) {
+                console.log('an error happened: ' + err.message);
+            })
+            .pipe(res, { end: true });
+    },
+    liveStream: function (req, res, options) {
 
     }
 }

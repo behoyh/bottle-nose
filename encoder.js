@@ -1,5 +1,7 @@
-﻿//TODO: determine file type, for now return .mp4
+﻿var mime = require('mime-types')
 
 module.exports = {
-    encode: function (filename) { return "video/mp4"; }
+    encode: function (filename) {
+      return  mime.lookup(filename);
+    }
 };

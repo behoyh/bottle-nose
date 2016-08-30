@@ -1,6 +1,6 @@
 {
   "name": "example",
-  "version": "0.0.0.4",
+  "version": "0.0.0.5",
   "description": "example",
   "main": "streamserver.js",
   "author": {
@@ -9,6 +9,6 @@
   "dependencies": {
     "express": "^4.14.0",
     "fluent-ffmpeg": "^2.1.0",
-    "path2": "^0.1.0"
+    "mime-types": "^2.1.11"
   }
 }
