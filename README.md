@@ -1,42 +1,27 @@
-# bottle-nose
+# BottleNose
 
-Node.js bolierplate for silky-smooth media streaming
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.4.
 
----
-## What you will need to do:
+## Development server
 
-1. Install the Linux version of ffmpeg.
-  * sudo add-apt-repository ppa:jon-severinsson/ffmpeg
-  * sudo apt-get update
-  * sudo apt-get install ffmpeg
-  * sudo apt-get install frei0r-plugins
-2. Link the [FlowPlayer](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg/tree/master/examples/flowplayer) flowplayer.min.js file and flowplayer.swf to index.html.
-3. run ```npm install```
-4. run ```node streamserver.js```
-5. Navigate to index.html
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-***
+## Code scaffolding
 
-## Version History
-A list of all versions
-###v0.0.0.1 Just Hacking
-Unmodified source from HackWSU 2016
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-### v0.0.0.2 Just Cleaning
-Sanitized code
+## Build
 
-### v0.0.0.3 Just Renaming
-Rename `encoder.js` to `bottle-nose.js`
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-### v.0.0.0.4 Just Adding
-Functions for MPEG-DASH and Apple HLS added, encoder.js module added for file type encoding 
+## Running unit tests
 
-### v.0.0.0.4 Just MIME-ing
-encoder.js now returns correct mime-type for content
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
----
-# Roadmap
-☑ Publish working code <br>
-☐ Abrstact more functions of fluent-ffmpeg into cool one-liners (In-Progress)<br>
-☐ Upgrade client-side player to support the aforemetioned functions<br>
-☐ Complie into an npm package
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

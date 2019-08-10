@@ -1,14 +1,22 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="/flowplayer.min.js"></script>
+           <!-- flowplayer depends on jQuery 1.7.1+ (for now) -->
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+   <!-- flowplayer.js -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flowplayer/7.2.7/flowplayer.min.js"></script>
+
+   <!-- player styling -->
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flowplayer/7.2.7/skin/skin.min.css">
+
         <title>node-fluent-ffmpeg</title>
     </head>
     <body>
 
         <!-- this A tag is where your Flowplayer will be placed. it can be anywhere -->
         <a  
-             href="http://localhost:4000/api/stream/[filename]"
+             href="http://localhost:4000/api/stream/modern_capitalism.flv"
              style="display:block;width:520px;height:330px"  
              id="player"> 
         </a>
@@ -18,7 +26,7 @@
         </script>
         
     <video controls>
-        <source src="http://localhost:4000/api/stream/movie.mp4" type="video/mp4"/>
+        <source src="http://localhost:4000/api/stream/modern_capitalism.flv" type="video/mp4"/>
         <source src="http://localhost:4000/api/stream/movie.webm" type="video/webm"/>
         <source src="http://localhost:4000/api/stream/movie.ogg" type="video/ogg"/>
         <!-- fallback -->
