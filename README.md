@@ -10,11 +10,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   * `sudo apt-get install ffmpeg`
   * `sudo apt-get install frei0r-plugins`
   
-1b. On mac use `brew install ffmpeg`
-2. Link the [FlowPlayer](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg/tree/master/examples/flowplayer) flowplayer.min.js file and flowplayer.swf to index.html.
-3. run ```npm install```
-4. run ```node streamserver.js```
-5. Navigate to index.html
+1b. On Mac, use `brew install ffmpeg`
+
+2. run ```npm install``` in both client and server folders
+3. run ```npm start```  in the server folder.
+4. run ```ng serve -o``` in the client folder.
 
 ## Code scaffolding
 
