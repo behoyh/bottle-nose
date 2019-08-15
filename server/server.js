@@ -2,6 +2,8 @@ const express = require('express')
 const fs = require('fs')
 const path = require('path')
 const app = express()
+var multer  = require('multer')
+var upload = multer({ dest: 'uploads/' })
 
 app.use(express.static(path.join(__dirname, 'public')))
 
@@ -39,6 +41,10 @@ app.get('/video/:filename', function(req, res) {
   }
 })
 
-app.listen(3000, function () {
-  console.log('Listening on port 3000!')
+app.put('/video', upload.single('video'), function (req, res, next) {
+
+})
+
+app.listen(8080, function () {
+  console.log('Listening on port 8080!')
 })
