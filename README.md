@@ -1,6 +1,6 @@
 # bottle-nose
 
-![bottle-nose demo](https://media.giphy.com/media/JqDBKWQq9skoXOpj11/giphy.gif)
+![bottle-nose demo](https://media.giphy.com/media/f5vlPCTkfZb2M2QKoN/giphy.gif)
 
 ## Development server
 
