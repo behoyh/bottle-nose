@@ -1,6 +1,6 @@
-# BottleNose
+# bottle-nose
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.4.
+![bottle-nose demo](https://media.giphy.com/media/JqDBKWQq9skoXOpj11/giphy.gif)
 
 ## Development server
 

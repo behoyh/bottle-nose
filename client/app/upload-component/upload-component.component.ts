@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { VideoService } from 'client/video.service';
 
 @Component({
   selector: 'app-upload-component',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UploadComponentComponent implements OnInit {
 
-  constructor() { }
+  upload: any;
+
+  constructor(private videoService: VideoService) { }
 
   ngOnInit() {
   }
 
+  getFileDetails(e) {
+    this.upload = e.target.files[0];
+  }
+
+  UploadVideo() {
+    this.videoService.UploadVideo(this.upload).subscribe(x => x.json());
+  }
 }

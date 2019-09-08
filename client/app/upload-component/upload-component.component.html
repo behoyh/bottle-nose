@@ -1,5 +1,7 @@
-<p>upload-component works!</p>
-<form action="localhost:8080/video" method="put" enctype="multipart/form-data">
-    <input type="file" name="video" />
-    <input type="submit"/>
-  </form>
+Upload
+<ng-container>    
+  <input type="file" id="file" multiple (change)="getFileDetails($event)">    
+  <button class="btn btn-primary" (click)="UploadVideo()">Upload</button>    
+</ng-container> 
+  
+    <br><br>

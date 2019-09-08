@@ -1,0 +1,7 @@
+<video id="videoPlayer" controls muted="muted" autoplay [src]="videoSrc"></video>
+Video List
+<ul>
+    <li *ngFor="let item of list">
+      <h2><button (click)="GetVideo(item)">{{item}}</button></h2>
+    </li>
+  </ul>
