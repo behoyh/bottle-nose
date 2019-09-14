@@ -2,6 +2,11 @@
 
 ![bottle-nose demo](https://media.giphy.com/media/f5vlPCTkfZb2M2QKoN/giphy.gif)
 
+## Prerequisites 
+
+- [Node.js](https://nodejs.org/en/download/)
+- [Angular CLI](https://cli.angular.io/)
+
 ## Setup
 
 1a. Install the Linux version of ffmpeg.
