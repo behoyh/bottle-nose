@@ -2,7 +2,12 @@
 
 ![bottle-nose demo](https://media.giphy.com/media/f5vlPCTkfZb2M2QKoN/giphy.gif)
 
-## Development server
+## Prerequisites 
+
+- [Node.js](https://nodejs.org/en/download/)
+- [Angular CLI](https://cli.angular.io/)
+
+## Setup
 
 1a. Install the Linux version of ffmpeg.
   * `sudo add-apt-repository ppa:jon-severinsson/ffmpeg`
@@ -15,6 +20,7 @@
 2. run ```npm install``` in both client and server folders
 3. run ```npm start```  in the server folder.
 4. run ```ng serve -o``` in the client folder.
+<<<<<<< HEAD
 
 ## Live Streaming
 1. Install gpac 0.8.0
