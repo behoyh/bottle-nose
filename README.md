@@ -45,7 +45,7 @@ DashCast -vf avfoundation -vres 848x480 -v "FaceTime Camera" -vfr 30 -live -pixf
 ```
 node gpac-dash.js -cors
 ```
-3. Open server/index.html in a web browser.
+3. cd ../client && ng serve -o
 
 ##### use "FaceTime HD Camera" for Macs that support it.
 ##### use -a for audio.

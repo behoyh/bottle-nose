@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { UploadComponentComponent } from './upload-component/upload-component.component';
 import { VideoComponentComponent } from '../video-component/video-component.component';
-import { Http, HttpModule } from '@angular/http';
+import { HttpModule } from '@angular/http';
+import { DashjsPlayerModule } from 'angular-dashjs-player';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { Http, HttpModule } from '@angular/http';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    DashjsPlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

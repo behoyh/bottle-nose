@@ -8,8 +8,9 @@ import { VideoService } from 'client/video.service';
 })
 export class VideoComponentComponent implements OnInit {
 
-  videoSrc = "http://127.0.0.1:8080/video/modern_capitalism.mp4";
+  videoSrc = null;
   list: any;
+  live = true;
   constructor(private videoService:VideoService) { 
 
   }
@@ -24,7 +25,11 @@ export class VideoComponentComponent implements OnInit {
   }
 
   GetVideo(item){
+    this.live=false;
     this.videoSrc = "http://127.0.0.1:8080/video/"+item;
+  }
+  Live(){
+    this.live = true;
   }
 
 }
