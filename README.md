@@ -20,7 +20,6 @@
 2. run ```npm install``` in both client and server folders
 3. run ```npm start```  in the server folder.
 4. run ```ng serve -o``` in the client folder.
-<<<<<<< HEAD
 
 ## Live Streaming
 1. [Install gpac 0.8.0](https://download.tsi.telecom-paristech.fr/gpac/release/0.8.0/gpac-0.8.0-rev1-gc1990d5c-master.pkg)
