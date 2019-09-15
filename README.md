@@ -6,6 +6,8 @@
 
 - [Node.js](https://nodejs.org/en/download/)
 - [Angular CLI](https://cli.angular.io/)
+- ffmpeg
+- [gpac 0.8.0](https://download.tsi.telecom-paristech.fr/gpac/release/0.8.0/gpac-0.8.0-rev1-gc1990d5c-master.pkg)
 
 ## Setup
 
