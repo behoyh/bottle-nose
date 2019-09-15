@@ -47,3 +47,5 @@ Thumbs.db
 
 # Video Files
 **.mp4
+
+**/output/
