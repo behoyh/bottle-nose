@@ -36,15 +36,12 @@ MP4Client http://127.0.0.1:8000/output/dashcast.mpd -opt Network:BufferLength=20
 
 2b. macOS (Macbook 2017)
 
-```
-cd server
-npm install
-DashCast -vf avfoundation -vres 848x480 -v "FaceTime Camera" -vfr 30 -live -pixf yuyv422 -conf dashcast.conf -live -v4l2f mjpeg -low-delay
-```
-```
-node gpac-dash.js -cors
-```
-3. cd ../client && ng serve -o
+`cd server`
+`npm install`
+`DashCast -vf avfoundation -vres 848x480 -v "FaceTime Camera" -vfr 30 -live -pixf yuyv422 -conf dashcast.conf -live -v4l2f mjpeg -low-delay`
+`node gpac-dash.js -cors`
+
+3. `cd ../client && ng serve -o`
 
 ##### use "FaceTime HD Camera" for Macs that support it.
 ##### use -a for audio.
