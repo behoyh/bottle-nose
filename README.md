@@ -7,7 +7,7 @@
 - [Node.js](https://nodejs.org/en/download/)
 - [Angular CLI](https://cli.angular.io/)
 - ffmpeg
-- [gpac 0.8.0](https://download.tsi.telecom-paristech.fr/gpac/release/0.8.0/gpac-0.8.0-rev1-gc1990d5c-master.pkg)
+- [gpac 0.8.0](https://gpac.wp.imt.fr/downloads/)
 
 ## Setup
 
@@ -19,15 +19,11 @@
   
 1b. On Mac, use `brew install ffmpeg`
 
-2. run ```npm install``` in both client and server folders
-3. run ```npm start```  in the server folder.
-4. run ```ng serve -o``` in the client folder.
+2. [Install gpac 0.8.0](https://gpac.wp.imt.fr/downloads/)
 
-## Live Streaming
-1. [Install gpac 0.8.0](https://download.tsi.telecom-paristech.fr/gpac/release/0.8.0/gpac-0.8.0-rev1-gc1990d5c-master.
-2. cd server && npm install
+3. cd server && npm install
 
-3a. Windows
+4a. Windows
 
 ```
 DashCast  -vf dshow  -vres 640x480 -vfr 30 -v video="Integrated Webcam" -live -low-delay -frag 200 -insert-utc -seg-marker eods -min-buffer 0.2 -ast-offset -800 -pixf yuv420p
@@ -35,16 +31,15 @@ DashCast  -vf dshow  -vres 640x480 -vfr 30 -v video="Integrated Webcam" -live -l
 MP4Client http://127.0.0.1:8000/output/dashcast.mpd -opt Network:BufferLength=200 -opt DASH:LowLatency=chunk -opt DASH:UseServerUTC=no
 ```
 
-3b. macOS (Macbook 2017)
+4b. macOS (Macbook 2017)
 
 ```
 DashCast -vf avfoundation -vres 848x480 -v "FaceTime Camera" -vfr 30 -live -pixf yuyv422 -conf dashcast.conf -live -v4l2f mjpeg -low-delay
 ```
 
+5. `npm start`
 
-
-4. `npm start`
-5. `cd ../client && ng serve -o`
+6. `cd ../client && ng serve -o`
 
 ## Notes
 ##### use "FaceTime HD Camera" for Macs that support it, or another webcam.
