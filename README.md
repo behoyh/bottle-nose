@@ -43,14 +43,15 @@ cd server
 npm install
 DashCast -vf avfoundation -vres 848x480 -v "FaceTime Camera" -vfr 30 -live -pixf yuyv422 -conf dashcast.conf -live -v4l2f mjpeg -low-delay
 ```
-```
-node gpac-dash.js -cors
-```
 
-3. `cd ../client && ng serve -o`
 
-##### use "FaceTime HD Camera" for Macs that support it.
-##### use -a for audio.
+
+3. `npm start`
+4. `cd ../client && ng serve -o`
+
+## Notes
+##### use "FaceTime HD Camera" for Macs that support it, or another webcam.
+##### use -a for audio (-a plughw:[x],[y] , where x and y are the card number and device number, respectively), or -av for a recording device with integrated audio.
 
 ## Code scaffolding
 

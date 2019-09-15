@@ -4,6 +4,13 @@ const path = require('path')
 const app = express()
 const multer  = require('multer')
 const bodyParser = require('body-parser');
+const { exec } = require('child_process');
+
+const live_streaming_server = exec('node gpac-dash.js -cors');
+
+live_streaming_server.on('exit', function (code, signal) {
+  console.error('Streaming server exited with ' + `${code} and signal ${signal}`);
+});
 
 app.use(express.static(path.join(__dirname, 'public')))
 
