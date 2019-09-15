@@ -51,7 +51,7 @@ DashCast -vf avfoundation -vres 848x480 -v "FaceTime Camera" -vfr 30 -live -pixf
 
 ## Notes
 ##### use "FaceTime HD Camera" for Macs that support it, or another webcam.
-##### use -a for audio (`arecord -l` to get a list of devices, then `-a plughw:[x],[y]`, where x and y are the card number and device number, respectively), or -av for a recording device with integrated audio.
+##### use -a for audio (`arecord -l` to get a list of devices, then `-a plughw:[x],[y]`, where [x] and [y] are the card number and device number, respectively), or -av for a recording device with integrated audio.
 
 ## Code scaffolding
 
