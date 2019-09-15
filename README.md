@@ -24,30 +24,27 @@
 4. run ```ng serve -o``` in the client folder.
 
 ## Live Streaming
-1. [Install gpac 0.8.0](https://download.tsi.telecom-paristech.fr/gpac/release/0.8.0/gpac-0.8.0-rev1-gc1990d5c-master.pkg)
+1. [Install gpac 0.8.0](https://download.tsi.telecom-paristech.fr/gpac/release/0.8.0/gpac-0.8.0-rev1-gc1990d5c-master.
+2. cd server && npm install
 
-2a. Windows
+3a. Windows
 
 ```
-cd server
-npm install
 DashCast  -vf dshow  -vres 640x480 -vfr 30 -v video="Integrated Webcam" -live -low-delay -frag 200 -insert-utc -seg-marker eods -min-buffer 0.2 -ast-offset -800 -pixf yuv420p
  node gpac-dash.js -segment-marker eods -chunk-media-segments
 MP4Client http://127.0.0.1:8000/output/dashcast.mpd -opt Network:BufferLength=200 -opt DASH:LowLatency=chunk -opt DASH:UseServerUTC=no
 ```
 
-2b. macOS (Macbook 2017)
+3b. macOS (Macbook 2017)
 
 ```
-cd server
-npm install
 DashCast -vf avfoundation -vres 848x480 -v "FaceTime Camera" -vfr 30 -live -pixf yuyv422 -conf dashcast.conf -live -v4l2f mjpeg -low-delay
 ```
 
 
 
-3. `npm start`
-4. `cd ../client && ng serve -o`
+4. `npm start`
+5. `cd ../client && ng serve -o`
 
 ## Notes
 ##### use "FaceTime HD Camera" for Macs that support it, or another webcam.
