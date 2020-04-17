@@ -11,16 +11,16 @@
 
 ## Setup
 
-1a. Install the Linux version of ffmpeg.
+1 a. Install the Linux version of ffmpeg.
   `sudo apt-get install ffmpeg`
   
-1b. On Mac, use `brew install ffmpeg`
+1 b. On Mac, use `brew install ffmpeg`
 
 2. [Install gpac 0.8.0](https://gpac.wp.imt.fr/downloads/)
 
 3. cd server && npm install
 
-4a. Windows
+4 a. Windows
 
 ```
 DashCast  -vf dshow  -vres 640x480 -vfr 30 -v video="Integrated Webcam" -live -low-delay -frag 200 -insert-utc -seg-marker eods -min-buffer 0.2 -ast-offset -800 -pixf yuv420p
