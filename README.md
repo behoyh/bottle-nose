@@ -10,33 +10,23 @@
 - [gpac 0.8.0](https://gpac.wp.imt.fr/downloads/)
 
 ## Setup
-
-1a. Install the Linux version of ffmpeg.
+1. Install the Linux version of ffmpeg.
   `sudo apt-get install ffmpeg`
-  
-1b. On Mac, use `brew install ffmpeg`
-
-2. [Install gpac 0.8.0](https://gpac.wp.imt.fr/downloads/)
-
-3. cd server && npm install
-
-4a. Windows
-
+2. On Mac, use `brew install ffmpeg`
+* [Install gpac 0.8.0](https://gpac.wp.imt.fr/downloads/)
+* cd server && npm install
+3. Windows
 ```
 DashCast  -vf dshow  -vres 640x480 -vfr 30 -v video="Integrated Webcam" -live -low-delay -frag 200 -insert-utc -seg-marker eods -min-buffer 0.2 -ast-offset -800 -pixf yuv420p
  node gpac-dash.js -segment-marker eods -chunk-media-segments
 MP4Client http://127.0.0.1:8000/output/dashcast.mpd -opt Network:BufferLength=200 -opt DASH:LowLatency=chunk -opt DASH:UseServerUTC=no
 ```
-
-4b. macOS (Macbook 2017)
-
+4. macOS (Macbook 2017)
 ```
 DashCast -vf avfoundation -vres 848x480 -v "FaceTime Camera" -vfr 30 -live -pixf yuyv422 -conf dashcast.conf -live -v4l2f mjpeg -low-delay
 ```
-
-5. `npm start`
-
-6. `cd ../client && ng serve -o`
+* `npm start`
+* `cd ../client && ng serve -o`
 
 ## Notes
 ##### use "FaceTime HD Camera" for Macs that support it, or another webcam.
